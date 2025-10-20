@@ -1,13 +1,17 @@
 {
+  "homepage": "https://Tedinho13.github.io/React-Test",
   "name": "git",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "gh-pages": "^6.3.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-scripts": "2.1.8"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
